@@ -1,0 +1,17 @@
+@import'./utils/variables';
+@import './base/reset';
+
+
+@import './utils/mixin';
+@import'./utils/spacing';
+@import'./themes/theme';
+@import './utils/flex';
+@import './utils/text';
+@import'./layout/gird';
+@import'./utils/utilities';
+@import './base/typography';
+
+@import'./layout/header';
+@import'./layout/footer';
+
+@import'./pages/index'

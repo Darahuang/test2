@@ -1,0 +1,117 @@
+.feature {
+  @include md {
+    h2 {
+      font-size: $h3-font-size;
+    }
+  }
+  .feature-icon {
+    width: 83.83px;
+    height: 83.83px;
+  }
+  @include sm {
+    h2 {
+        font-size: $h4-font-size;
+      }
+  }
+}
+
+.classic {
+  h3 {
+    font-size: $font-size-base * 2.25;
+
+    @include md {
+      font-size: $font-size-base * 1.75;
+    }
+    @include sm {
+      color: $white;
+    }
+  }
+
+  .classic-icon {
+    width: 32px;
+    height: 32px;
+    @include sm {
+      display: none;
+    }
+  }
+  .classic-sm-icon {
+    display: none;
+    @include sm {
+      display: block;
+    }
+  }
+  .classic-sun {
+    flex-direction: row-reverse;
+    @include md {
+      flex-direction: row;
+    }
+  }
+  .classic-position {
+    @include sm {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      justify-content: center;
+    }
+  }
+}
+.design {
+  .design-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    h2 {
+      font-size: $font-size-base * 4.5; // 72
+    }
+    @include md {
+        h2 {
+            font-size: $h3-font-size;
+        }
+    }
+  }
+
+  .design-banner {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+  }
+}
+
+.recommend-img{
+  img {
+    height: 256px;
+    width: 100%;
+  }
+}
+.recommend-text{
+  height: calc(100% - 256px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.recommend-card{
+  // border: $gray 1px solid;
+  box-shadow:  0 .25rem .3rem rgba($dark, .075);
+}
+
+.contact{
+  .btn-contact{
+    padding: 16px 143px;
+    background-color: $primary;
+    border:none;
+    &:hover {
+      background-color:$info ;
+    }
+  }
+  .btn-contact-text{
+    font-size: $h6-font-size;
+    @include md{
+      font-size: $font-size-base*0.875; //14
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@mixin lg {
+  @media(max-width:992px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin sm {
+    @media(max-width:576px) {
+        @content;
+    }
+}
+
+@mixin xs {
+   @media (max-width:320px) {
+     @content
+   }
+}
+@mixin text-hide {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin img-cover {
+  object-position: center center;
+  object-fit: cover;
+}
